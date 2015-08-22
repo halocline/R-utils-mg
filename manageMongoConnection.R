@@ -3,7 +3,8 @@
 ## July 2015
 
 library(rmongodb)
-source("./lib/R_utils_mg/getCredentials.R")
+setwd("~/Code/R-utils-mg/")
+source("./getCredentials.R")
 
 closeMongoConnection <- function (m) {
   mongo.destroy(m)
