@@ -31,7 +31,7 @@ unzip <- function (path) {
     contents <- untar(path, list = TRUE, exdir = "./tmp", verbose = TRUE)
     untar(path, list = FALSE, exdir = "./tmp", verbose = TRUE)
     dir <- list.dirs(path = "./tmp")
-    return(dir[2])
+    return(dir)
 }
 
 getFiles <- function(dir, files, sep = "") {
